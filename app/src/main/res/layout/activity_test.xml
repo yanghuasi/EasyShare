@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ed_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输出ip地址" />
+
+    <EditText
+        android:id="@+id/ed_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入端口号" />
+
+    <Button
+        android:id="@+id/sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送端" />
+
+    <Button
+        android:id="@+id/receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接收端" />
+</LinearLayout>

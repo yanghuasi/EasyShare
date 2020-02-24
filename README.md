@@ -1,1 +1,10 @@
 #EasyShare
+发送端：
+1.输入接收端用户的Ip地址跟端口，与其连接
+2.利用MediaProjection录制当前屏幕内容，生成YUV数据
+3.MediaCodec将YUV数据转化成h264数据，并通过socket发送给接收端
+接收端：
+1.打开socket服务器
+2.等待被连接
+2.接收到发送端发过来的h264数据
+3.通过硬解码将其转化成YUV数据并渲染在surfaceView上
